@@ -1,0 +1,6 @@
+﻿production of electricity,,,,
+F,electricity,kWh,1,0.1
+I,aluminum,kg,-0.01,0.001
+I,CrudeOil,kg,-0.5,0.05
+L,CO2,kg,3,0.3
+L,SolidWaste,kg,2,0.2
