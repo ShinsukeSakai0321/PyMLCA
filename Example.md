@@ -88,7 +88,15 @@ print('PSF=',dp.rs.GetPSF())
 #Reliability index= 3.3883930675077463
 #PSF= [1.16758259 0.74455919 0.82226887]
 ```
-By performing calculations for multiple entities, the relationship between the entity and the reliability index can be determined. Determine the entity value corresponding to the target reliability (e.g., Pf = 0.05, $\beta$= 1.64), and perform reliability analysis again for that value. Save the instance dp to a file (e.g., dp_CO2_0_05.pkl) at that time.
+By performing calculations for multiple entities, the relationship between the entity and the reliability index can be determined. Determine the entity value corresponding to the target reliability (e.g., Pf = 0.05, $\beta$= 1.64), and perform reliability analysis again for that value. Save the instance dp to a file (e.g., dp_CO2_0_05.pkl) at that time as follows.
+
+```python
+import pickle
+with open("dp_CO2_0_05.pkl", "wb") as file:
+    pickle.dump(dp, file)
+```
+
+
 
 ### Method for verifying whether the target reliability is satisfied
 First, load the instance saved in the file.
