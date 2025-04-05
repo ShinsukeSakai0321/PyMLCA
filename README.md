@@ -13,7 +13,7 @@ perturbation method. Clean technologies and environmental policy, Vol. 4, No. 2,
 
 ### Procedure
 1. Download all the files from this site.
-1. Create a folder to store inventory data.
+1. Create a folder to store inventory data. As an example, the folder named 'SandwichPackage' is already created.
 1. Save the inventory data to be analyzed in that folder.
 1. Import PyMLCA module using 'import PyMLCA as pm' command.
 1. Create an instance to manage the analysis using 'dp=pm.DesignProcess()' command.
