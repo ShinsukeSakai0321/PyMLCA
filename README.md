@@ -36,6 +36,17 @@ solution,surplusFlow,loadValue=dp.SimpleAnalysis()
 Confirm the created coefficient matrix.
 ```python
 print(dp.rbld.mlca.coefficientMat)
+mat  production of aluminum  production of aluminum foil  \
+0          aluminum                     1.0                         -1.0   
+1      AluminumFoil                     0.0                          1.0   
+2       electricity                   -50.0                         -1.0   
+3  SandwichPackages                     0.0                          0.0   
+
+   production of electricity  usage of aluminum foil  
+0                      -0.01                     0.0  
+1                       0.00                    -1.0  
+2                       1.00                     0.0  
+3                       0.00                     1.0
 ```
 Display the solution of the process values.
 ```python
@@ -53,7 +64,7 @@ i=0
 print('Calculation of sensitivity matrix for environmental load:',loadName[i])
 print(dp.rbld.mlca.Smat(i))
 ```
-Example for reliability based design for LCA in sandwich packages is written in 'Example.md'. Please trExample for reliability based design for LCA in sandwich packagesy and check it.
+Example for reliability based design for LCA in sandwich packages is written in 'Example.md'. Please try an example for reliability based design for LCA in sandwich packagesy and check it.
 
 ### File details
 |file |description |
