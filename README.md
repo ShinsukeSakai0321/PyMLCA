@@ -37,6 +37,7 @@ Confirm the created coefficient matrix.
 ```python
 print(dp.rbld.mlca.coefficientMat)
 ```
+The expected output would be as follows.
 <table style="border-collapse: collapse;">
   <tr>
     <td style="border: none;"> mat</td>
@@ -79,18 +80,31 @@ Display the solution of the process values.
 ```python
 print(solution)
 ```
+The expected output would be as follows.   
+[ 0.202  0.1   10.2    0.1  ]   
 Display the names of the environmental impacts and their solutions.
 ```python
 flowName,b,loadName=dp.GetName()
 print('Names of the environmental impacts=',loadName)
 print('Their solutions=',loadValue)
 ```
+The expected output would be as follows.  
+Names of the environmental impacts= ['SolidWaste', 'CO2']   
+Their solutions= [22.52 30.6 ]   
 Calculation of sensitivity matrix.
 ```python
-i=0
+i=1
 print('Calculation of sensitivity matrix for environmental load:',loadName[i])
 print(dp.rbld.mlca.Smat(i))
 ```
+The expected output would be as follows.   
+Calculation of sensitivity matrix for environmental load: CO2   
+[[-1.98039216  0.98039216  1.         -0.        ]   
+ [-0.         -1.         -0.          1.        ]   
+ [ 1.98039216  0.01960784 -2.         -0.        ]   
+ [-0.         -0.         -0.         -1.        ]]   
+
+
 Example for reliability based design for LCA in sandwich packages is written in 'Example.md'. Please try an example for reliability based design for LCA in sandwich packagesy and check it.
 
 ### File details
