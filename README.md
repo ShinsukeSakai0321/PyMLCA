@@ -1,8 +1,8 @@
 # PyMLCA
 ## Software for Generalized Matrix-based LCA and Reliability Based LCA
 #### Shinsuke Sakai   
- Emeritus Professor, The University of Tokyo   
- Visiting Professor, Yokohama National University
+ Emeritus Professor, The University of Tokyo, Japan   
+ Visiting Professor, Yokohama National University, Japan
 
  ### Overview
 On this site, we provide python software code required for general-purpose matrix-based LCA analysis and LCA based on reliability design. Algorithm for sensitivity analysis using perturbation method is based on the theory shown by Sakai and Yokoyama[1]. 
@@ -36,18 +36,45 @@ solution,surplusFlow,loadValue=dp.SimpleAnalysis()
 Confirm the created coefficient matrix.
 ```python
 print(dp.rbld.mlca.coefficientMat)
-mat  production of aluminum  production of aluminum foil  \
-0          aluminum                     1.0                         -1.0   
-1      AluminumFoil                     0.0                          1.0   
-2       electricity                   -50.0                         -1.0   
-3  SandwichPackages                     0.0                          0.0   
-
-   production of electricity  usage of aluminum foil  
-0                      -0.01                     0.0  
-1                       0.00                    -1.0  
-2                       1.00                     0.0  
-3                       0.00                     1.0
 ```
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="border: none;"> mat</td>
+    <td style="border: none;">production of aluminum</td>
+    <td style="border: none;">production of aluminum foil</td>
+    <td style="border: none;">production of electricity</td>
+    <td style="border: none;">usage of aluminum foil</td>
+  </tr>
+  <tr>
+    <td style="border: none;">aluminum </td>
+    <td style="border: none;">1.0</td>
+    <td style="border: none;">-1.0</td>
+    <td style="border: none;">-0.01</td>
+    <td style="border: none;">-0.0</td>
+  </tr>
+  <tr>
+    <td style="border: none;">AluminumFoil </td>
+    <td style="border: none;">0.0</td>
+    <td style="border: none;">1.0</td>
+    <td style="border: none;">0.00</td>
+    <td style="border: none;">-1.0</td>
+  </tr>
+    <tr>
+    <td style="border: none;">electricity </td>
+    <td style="border: none;">-50.0</td>
+    <td style="border: none;">-1.0</td>
+    <td style="border: none;">1.00</td>
+    <td style="border: none;">0.0</td>
+  </tr>
+    <tr>
+    <td style="border: none;">SandwichPackages </td>
+    <td style="border: none;">0.0</td>
+    <td style="border: none;">0.0</td>
+    <td style="border: none;">0.00</td>
+    <td style="border: none;">1.0</td>
+  </tr>
+</table>
+
 Display the solution of the process values.
 ```python
 print(solution)
