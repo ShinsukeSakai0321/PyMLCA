@@ -532,6 +532,7 @@ class IO:
                     reader = csv.reader(f)
                     data=[]
                     for row in reader:
+                        if row[0][0]=='%':continue
                         data.append(row)
                     name=data[0][0]
                     data2=data[1:]
@@ -547,6 +548,7 @@ class IO:
                 reader = csv.reader(f)
                 data=[]
                 for row in reader:
+                    if row[0][0]=='%':continue
                     row[3]=float(row[3])
                     data.append(row)
                 df['BOUNDARY']=data
@@ -557,6 +559,7 @@ class IO:
                         reader = csv.reader(f)
                         data=[]
                         for row in reader:
+                            if row[0][0]=='%':continue
                             data.append(row)
                         name=data[0][0]
                         data2=data[1][0]
