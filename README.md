@@ -12,7 +12,7 @@ Should any required packages be missing during execution, please install them ac
 perturbation method. Clean technologies and environmental policy, Vol. 4, No. 2, pp. 72–78, 2002.](https://link.springer.com/article/10.1007/s10098-002-0150-2) 
 
 ### Procedure
-1. Import package "MLCArel" using pip command.
+1. Install package "MLCArel" using pip command.
 1. Create a folder to store inventory data. As an example, the folder named 'SandwichPackage' is already created.
 1. Save the inventory data to be analyzed in that folder.
 1. Import PyMLCA module using 'from MLCArel import PyMLCA as pm' command.
