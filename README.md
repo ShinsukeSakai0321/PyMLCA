@@ -1,4 +1,4 @@
-# PyMLCA
+# MLCArel
 ## Software for Generalized Matrix-based LCA and Reliability Based LCA
 #### Shinsuke Sakai   
  Emeritus Professor, The University of Tokyo, Japan   
@@ -12,10 +12,10 @@ Should any required packages be missing during execution, please install them ac
 perturbation method. Clean technologies and environmental policy, Vol. 4, No. 2, pp. 72–78, 2002.](https://link.springer.com/article/10.1007/s10098-002-0150-2) 
 
 ### Procedure
-1. Download all the files from this site.
+1. Import package "MLCArel" using pip command.
 1. Create a folder to store inventory data. As an example, the folder named 'SandwichPackage' is already created.
 1. Save the inventory data to be analyzed in that folder.
-1. Import PyMLCA module using 'import PyMLCA as pm' command.
+1. Import PyMLCA module using 'from MLCArel import PyMLCA as pm' command.
 1. Create an instance to manage the analysis using 'dp=pm.DesignProcess()' command.
 1. From here on, use the created instance to perform the intended analysis.
 
@@ -24,7 +24,7 @@ The following describes the method for checking when using the inventory data in
 
 First, create an instance and define the inventory data folder.
 ```python
-import PyMLCA as pm
+from MLCArel import PyMLCA as pm
 dp=pm.DesignProcess()
 path='./SandwichPackage'
 dp.SetDfFromPath(path)
@@ -114,14 +114,6 @@ Calculation of sensitivity matrix for environmental load: CO2
 ***
 Example for reliability based design for LCA in sandwich packages is written in 'Example.md'. Please try an example for reliability based design for LCA in sandwich packagesy and check it.
 
-### File details
-|file |description |
-|-----------|-----------|
-| PyMLCA.py   | Package for matrix-based LCA and sensitivity analysis  |
-| LimitState.py | Package for reliability analysis|
-| Kriging.py| Package for Kriging analysis|
-|./SandwichPackage | folder which have inventory data for Sandwich Packages|
-| Example.md| Example for reliability based design for LCA in sandwich packages|
 
 
 

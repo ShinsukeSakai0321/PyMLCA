@@ -12,7 +12,7 @@ Vol. 10, No. 1, pp. 69–81, 1994.](https://www.sciencedirect.com/science/articl
 
 
 ```python
-import PyMLCA as pm
+from MLCArel import PyMLCA as pm
 dp=pm.DesignProcess()
 # Define the folder where the inventory data exist.
 path='./SandwichPackage'
