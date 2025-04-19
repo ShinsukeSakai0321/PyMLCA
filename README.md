@@ -1,12 +1,12 @@
-# MLCArel
 ## Software for Generalized Matrix-based LCA and Reliability Based LCA
+This site explains how to use the MLCArel package and the PyMLCA module.
+
 #### Shinsuke Sakai   
  Emeritus Professor, The University of Tokyo, Japan   
  Visiting Professor, Yokohama National University, Japan
 
  ### Overview
-On this site, we provide python software code required for general-purpose matrix-based LCA analysis and LCA based on reliability design. Algorithm for sensitivity analysis using perturbation method is based on the theory shown by Sakai and Yokoyama[1]. 
-Should any required packages be missing during execution, please install them accordingly. When publishing results obtained using the software provided on this site, please be sure to include a citation to this site.
+This package MLArel provides the function for general-purpose matrix-based LCA analysis and LCA based on reliability design. Algorithm for sensitivity analysis using perturbation method is based on the theory shown by Sakai and Yokoyama[1]. Should any required packages be missing during execution, please install them accordingly.
 
 [1][Shinsuke Sakai and Koji Yokoyama. Formulation of sensitivity analysis in life cycle assessment using a
 perturbation method. Clean technologies and environmental policy, Vol. 4, No. 2, pp. 72–78, 2002.](https://link.springer.com/article/10.1007/s10098-002-0150-2) 
